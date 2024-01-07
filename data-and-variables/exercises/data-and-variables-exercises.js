@@ -9,3 +9,21 @@
 // Calculate a trip to the moon below
 
 // Print the results of the trip to the moon below
+
+// Exercise data-and-variable Jessica Donnelly
+
+let nameSpaceShuttle = "Determination"
+let shuttleSpeedMph = 17500
+let distanceToMars = 225000000
+let distanceToMoon = 384400
+let milesPerKilometer = 0.621
+
+console.log(typeof nameSpaceShuttle);
+console.log(typeof shuttleSpeedMph);
+console.log(typeof distanceToMars);
+console.log(typeof distanceToMoon);
+console.log(typeof milesPerKilometer);
+
+
+
+
