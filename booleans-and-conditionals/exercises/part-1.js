@@ -39,3 +39,14 @@ if (shuttleSpeed > 17500) {
    console.log("Stable speed");
 }
 
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
+   console.log("all systems go");
+} else {
+   console.log("WARNING. Not ready");
+}
+
+if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
+   console.log("WARNING. Not ready");
+} else {
+   console.log("all systems go");
+}
