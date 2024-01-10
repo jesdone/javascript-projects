@@ -43,7 +43,7 @@ let milesToMars = distanceToMarsKm * milesPerKm
 console.log("Miles to Mars=", milesToMars)
 
 let hoursToMars = milesToMars / shuttleSpeedMph
-console.log("Hours to Mars +", hoursToMars)
+console.log("Hours to Mars =", hoursToMars)
 
 let daysToMars = hoursToMars / 24
 console.log("Days to Mars =", daysToMars)
