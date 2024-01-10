@@ -2,27 +2,39 @@
 // Since the issue is with launchReady, ONE way to fix the logic error is to use a different variable to store the fuel check result. 
 // Refactor the code to do this. Verify that your change works by updating the console.log statements.
 
-let launchReady = false;
-let fuelLevel = 17000;
+let launchReady = true;
+let fuelLevel = 27000;
+let fuelCheck = true
 let crewStatus = true;
 let computerStatus = 'green';
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
-   launchReady = true;
+   fuelCheck = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   fuelCheck = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("fuel levels = ", launchReady);
 
-if (crewStatus && computerStatus === 'green'){
+if (crewStatus && fuelCheck === true && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
    launchReady = true;
 } else {
-   console.log('WARNING: Crew or computer not ready!');
+   console.log('WARNING: Crew, fuel, or computer not ready!');
    launchReady = false;
 }
 
 console.log("launchReady = ", launchReady);
+
+if (launchReady) {
+   console.log("10, 9, 8...");
+   console.log("Fed parrot...");
+   console.log("6, 5, 4...");
+   console.log("Ignition...");
+   console.log("3, 2, 1...");
+   console.log("Liftoff!");
+} else {
+   console.log("Launch scrubbed.");
+}
