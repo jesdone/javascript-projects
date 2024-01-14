@@ -3,6 +3,7 @@
 let word = 'JavaScript';
 
 console.log(word.toUpperCase());
+console.log(word.slice(4).toUpperCase())
 //Returns ``JAVASCRIPT``
 
 //What does ``word.slice(4).toUpperCase()`` return?
