@@ -10,7 +10,7 @@ num = "123.45";
 console.log(num.length -1);
 //Experiment! What if num could be EITHER an integer or a decimal?  Add an if/else statement so your code can handle both cases.
 num = "1234.56";
-let atIndex = num.indexOf(".");
+let atIndex = num.includes(".");
 if (atIndex > -1){
     console.log(num.length - 1);
 } else{
