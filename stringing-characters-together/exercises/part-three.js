@@ -34,3 +34,4 @@ console.log(result);
 //1. Use the string methods you know to print 'Title Case' from the string 'title case'.
 
 let notTitleCase = 'title case';
+console.log(notTitleCase.replace("t", "T"));
