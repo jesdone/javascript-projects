@@ -4,18 +4,18 @@ let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
 
 // First, print out the dna strand in it's current state.
 
-let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
+ dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
 console.log(dna);
 
 //1) Use the .trim() method to remove the leading and trailing whitespace, then print the result.
 
-let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
+ dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
 let newString = dna.trim();
 console.log(newString);
 
 //2) Change all of the letters in the dna string to UPPERCASE, then print the result.
 
-let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
+dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
 dna = dna.trim().toUpperCase();
 console.log(dna);
 
@@ -27,7 +27,7 @@ console.log(dna);
 
 //Part Two Section Two
 
-let dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
+dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
 
 //1) Replace the gene "GCT" with "AGG", and then print the altered strand.
 
