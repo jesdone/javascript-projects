@@ -1,10 +1,18 @@
 //Part Three section one
 
-let language = 'JavaScript';
+// let language = 'JavaScript';
 
 //1. Use string concatenation and two slice() methods to print 'JS' from 'JavaScript'
 
+console.log(language.slice(0,1)+language.slice(4,5));
+
 //2. Without using slice(), use method chaining to accomplish the same thing.
+function getSubstring(input, start, end) {
+    return input.substring(start, end);
+  }
+  let language = 'JavaScript';
+  console.log(getSubstring(language, 0, 1) + getSubstring(language, 4, 5));
+
 
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 
