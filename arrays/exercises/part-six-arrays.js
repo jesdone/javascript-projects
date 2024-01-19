@@ -7,11 +7,9 @@ let element26 = ['iron', 'Fe', 55.85];
 
 //2) Define the array 'table', and use 'push' to add each of the element arrays to it. Print 'table' to see its structure.
 
-let table = [    
-    ['hydrogen', 'H', 1.008],
-    ['helium', 'He', 4.003],
-    ['iron', 'Fe', 55.85]
-];
+let table = [];
+table.push(element1, element2, element26);
+console.log(table);
 
 
 //3) Use bracket notation to examine the difference between printing 'table' with one index vs. two indices (table[][]).
