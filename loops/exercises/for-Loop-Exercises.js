@@ -35,3 +35,18 @@ console.log(reversed);
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
+const numbers = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+
+let evenNumbers = [];
+let oddNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenNumbers.push(numbers[i]);
+  } else {
+    oddNumbers.push(numbers[i]);
+  }
+}
+
+console.log("Even Numbers:", evenNumbers);
+console.log("Odd Numbers:", oddNumbers);
