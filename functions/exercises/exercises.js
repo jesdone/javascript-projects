@@ -34,4 +34,19 @@ function makeLine(size){
     }
     return stairs.slice(0, -1);
   }
-  console.log(makeDownwardStairs(5))
+  // console.log(makeDownwardStairs(5))
+
+  function makeSpaceLine(numSpaces, numChars) {
+    let line = '';
+    for (let i = 0; i < numSpaces; i++) {
+      line += ' ';
+    }
+    for (let i = 0; i < numChars; i++) {
+      line += '#';
+    }
+    for (let i = 0; i < numSpaces; i++) {
+      line += ' ';
+    }
+    return line
+  }
+  console.log(makeSpaceLine(3, 5));
