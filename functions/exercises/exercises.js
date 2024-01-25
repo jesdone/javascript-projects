@@ -9,17 +9,14 @@ function makeLine(size){
   }
   // console.log(makeLine(5));
 
-  function makeSquare(size){
+  function makeSquare(width, height){
     let square = ''
-    for (let i = 0; i < size; i++) {
-      square += makeLine(size);
-      if (i < size - 1) {
-        square += '\n';
-      }
+    for (let i = 0; i < height; i++) {
+      square += makeLine(width) + '\n';
     }
-    return square;
+    return square.slice(0, -1);
   }
-  // console.log(makeSquare(5))
+  // console.log(makeSquare(5, 5))
 
   function makeRectangle(width, height){
     let rectangle = ''
@@ -28,4 +25,13 @@ function makeLine(size){
     }
     return rectangle.slice(0, -1);
   }
-  console.log(makeRectangle(5, 3))
+  // console.log(makeRectangle(5, 3))
+
+  function makeDownwardStairs(height) {
+    let stairs = '';
+    for (let i = 0; i < height; i++) {
+      stairs += (makeLine(i+1) + '\n');
+    }
+    return stairs.slice(0, -1);
+  }
+  console.log(makeDownwardStairs(5))
