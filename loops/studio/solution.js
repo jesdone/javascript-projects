@@ -15,24 +15,31 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 }
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
-  for (let i = 0; i < meals; i++) {
-    let meal = [];
+ 
+  let counter = 0;
 
-    // Nested loop to pick one item from each category
+function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
+  let pantry = [protein, grains, veggies, beverages, desserts];
+  let meals = [];
+
+  for (let i = 0; i < numMeals; i++) {
+    let meal = [];
     for (let category of pantry) {
-      let index = Math.floor(() * category.length);
+      const index = counter % category.length;
       meal.push(category[index]);
     }
-
     meals.push(meal);
+    counter++;
   }
 
   return meals;
+}
 
-  // for (let i = 0; i < meals; i++) {
-  //   let meal = [];
-  // }
+const result = mealAssembly(protein, grains, veggies, beverages, desserts, 5);
+console.log(result);
 
+
+ 
 function askForNumber() {
   numMeals = input.question("How many meals would you like to make?");
   
@@ -47,6 +54,8 @@ for (let meal of mealAssembly(protein, grains, veggies, beverages, desserts, 6))
 function generatePassword(string1, string2) {
   let code = '';
 
+
+  
   /// Code your Bonus Mission Solution here ///
 
   return code;
