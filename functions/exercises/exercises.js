@@ -58,4 +58,16 @@ function makeLine(size){
     }
     return triangle.slice(0, -1);
   }
-  console.log(makeIsoscelesTriangle(5));
+  // console.log(makeIsoscelesTriangle(5));
+
+  function makeDiamond(height) {
+    let triangle = '';
+    for (let i = 0; i < height; i++) {
+      triangle += (makeSpaceLine(height - i - 1, 2*i +1) + '\n');
+    }
+    for(let i = height -2; i >= 0; i--) {
+      triangle += (makeSpaceLine(height - i -1, 2 * i + 1) + '\n');
+    }
+    return triangle.slice(0, -1);
+  }
+  console.log(makeDiamond(5));
